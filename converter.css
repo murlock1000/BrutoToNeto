@@ -1,0 +1,37 @@
+.oboe {
+  /*position: relative;*/
+  display: inline;
+  border-bottom: 1px dotted black;
+}
+.oboewrapper {
+  position: absolute;
+  visibility: hidden;
+}
+
+.oboetext {
+  display: block;
+  position: relative;
+    bottom: 2.1em;
+    right: 38%;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+}
+.oboe .oboetext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+  /* Show the tooltip text when you mouse over the tooltip container */
+.oboe:hover .oboetext {
+  visibility: visible;
+  opacity: 1;
+}

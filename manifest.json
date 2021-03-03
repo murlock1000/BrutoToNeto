@@ -1,0 +1,41 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Bruto to Neto",
+    "description": "This extension converts Bruto payments to Neto in websites like cvonline.lt and cvbankas.lt.",
+    "version": "0.0.0.1",
+  
+    "browser_action": {
+        "default_icon": {
+            "128": "128.png",
+            "16": "16.png",
+            "48": "48.png"
+         },
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+     "activeTab",
+     "storage"
+     ],
+     "background":{
+        "scripts":[ "background.js" ]
+    },
+    "icons": {
+        "128": "128.png",
+        "16": "16.png",
+        "48": "48.png"
+    },
+    "content_scripts": [ {
+        "all_frames": true,
+        "css": [ "converter.css" ],
+        "js": [ "converter.js" ],
+        "matches": [ "https://www.cvonline.lt/*","https://www.cvbankas.lt/*", "https://www.ldb.lt/*", "https://www.skelbiu.lt/*", "https://www.cvmarket.lt/*",
+        "https://www.lovejob.lt/*",
+        "https://randu.lt/*",
+        "https://www.dirbam.lt/*"
+     ]
+    } ],
+    "web_accessible_resources": [
+        "websiteTags.json"
+    ]
+  }

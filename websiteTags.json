@@ -1,0 +1,42 @@
+{
+    "www.cvonline.lt":{
+        "rootType":"class",
+        "root":"salary-blue",
+        "brutoSigns":["(bruto)"]
+    },
+    "www.cvbankas.lt":{
+        "rootType":"class",
+        "root":"salary_c",
+        "brutoSigns":["Neatskaičius mokesčių","Gross"]
+    },
+    "www.ldb.lt":{
+        "rootType":"id",
+        "root":"ctl00_MainArea_MCPH_OpenPositionPreview_RenumerationPanel_Content",
+        "brutoSigns":["neatskaičius mokesčių"]
+    },
+    "www.skelbiu.lt":{
+        "rootType":"class",
+        "root":"adsPrice",
+        "brutoSigns":["neatskaičius mokesčių"]
+    },
+    "www.cvmarket.lt":{
+        "rootType":"class",
+        "root":"column hidden-xs-down main-column",
+        "brutoSigns":["Neatskaičius mokesčių"]
+    },
+    "www.lovejob.lt":{
+        "rootType":"class",
+        "root":"col-lg-6 mt-2",
+        "brutoSigns":["bruto"]
+    },
+    "randu.lt":{
+        "rootType":"class",
+        "root":"small-12 columns nopad item-list",
+        "brutoSigns":["prieš mokesčius"]
+    },
+    "www.dirbam.lt":{
+        "rootType":"class",
+        "root":"salary",
+        "brutoSigns":["(bruto)"]
+    }
+}
